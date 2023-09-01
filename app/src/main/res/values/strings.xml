@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BookSwap</string>
+    <string name="ISBN">ISBN</string>
+    <string name="Cover">Cover Page</string>
+    <string name="Photo1">Image 1</string>
+    <string name="Photo2">Image 2</string>
+    <string name="Browse">Browse</string>
+    <string name="Search">Find Book</string>
+    <string name="title_activity_upload_books">UploadBooks</string>
+</resources>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bkgColor">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <!--    Title-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical"
+                android:layout_weight="5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkcornflowerBlue"
+                    android:textSize="25sp"
+                    android:padding="10dp"
+                    android:text="Book Information"
+                    android:fontFamily="@font/montserrat_semi_bold">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/layout_bg"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="60dp">
+
+                <!--    Book Information (ISBN, Title, Author, Genre) + Book Cover-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal">
+
+
+                    <!--        Entered Info-->
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/isbn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@android:drawable/editbox_background"
+                            android:hint="ISBN"
+                            android:padding="17dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/lightergrey"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@android:drawable/editbox_background"
+                            android:hint="Title"
+                            android:padding="17dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/lightergrey"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/author"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@android:drawable/editbox_background"
+                            android:hint="Author"
+                            android:padding="17dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/lightergrey"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/genre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="10dp"
+                            android:background="@android:drawable/editbox_background"
+                            android:drawableRight="@android:drawable/arrow_down_float"
+                            android:drawablePadding="15dp"
+                            android:hint="Genre"
+                            android:textColor="@color/black"
+                            android:padding="17dp"
+                            android:textColorHint="@color/lightergrey"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <!--        Cover image-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/cover_image"
+                            android:layout_width="90dp"
+                            android:layout_height="250dp"
+                            android:src="@drawable/book_cover">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <!--    Images-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:orientation="vertical">
+
+
+                    <!--        Back Image 1-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp">
+
+                        <TextView
+                            android:id="@+id/Image1"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@android:drawable/editbox_background"
+                            android:hint="Image 1"
+                            android:padding="15dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/lightergrey"
+                            android:textSize="15sp">
+                        </TextView>
+
+                        <Button
+                            android:id="@+id/uploadImg1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/buttons_rounded"
+                            android:drawableRight="@drawable/baseline_file_upload_24"
+                            android:text="Upload"
+                            android:padding="12dp"
+                            android:textSize="13sp">
+                        </Button>
+                    </LinearLayout>
+
+                    <!--        Image 2-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp">
+
+                        <TextView
+                            android:id="@+id/Image2"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@android:drawable/editbox_background"
+                            android:hint="Image 2"
+                            android:padding="15dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/lightergrey"
+                            android:textSize="15sp">
+                        </TextView>
+
+                        <Button
+                            android:id="@+id/uploadImg2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/buttons_rounded"
+                            android:drawableRight="@drawable/baseline_file_upload_24"
+                            android:text="Upload"
+                            android:padding="12dp"
+                            android:textSize="13sp">
+                        </Button>
+                    </LinearLayout>
+
+                    <!--        Image 3-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp">
+
+                        <TextView
+                            android:id="@+id/Image3"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@android:drawable/editbox_background"
+                            android:hint="Image 3"
+                            android:padding="15dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/lightergrey"
+                            android:textSize="15sp">
+                        </TextView>
+
+                        <Button
+                            android:id="@+id/uploadImg3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/buttons_rounded"
+                            android:drawableRight="@drawable/baseline_file_upload_24"
+                            android:text="Upload"
+                            android:padding="12dp"
+                            android:textSize="13sp">
+                        </Button>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--    Done Uploading-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/DoneButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buttons_rounded"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:text="Done"
+                        >
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "104165784788",
+    "project_id": "bookswap999",
+    "storage_bucket": "bookswap999.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104165784788:android:d3fa1dcd8ec184d9268f41",
+        "android_client_info": {
+          "package_name": "com.example.bookswap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "104165784788-h8eqf8iketv8qdo5ckbiospthl70ofso.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOwq6ubZmhfIwFF7o-ed_eRbTt68d7xXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "104165784788-h8eqf8iketv8qdo5ckbiospthl70ofso.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

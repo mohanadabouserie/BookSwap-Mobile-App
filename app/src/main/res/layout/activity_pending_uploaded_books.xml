@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pending_uploaded_books"
+    android:background="@drawable/library"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uploaded Books"
+            android:layout_gravity="left"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:padding="10dp"
+            android:textColor="@color/darkcornflowerBlue"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="These are the books that you have uploaded and haven't been requested yet"
+            android:layout_gravity="left"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/darkcornflowerBlue"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+            android:id = "@+id/pending_uploaded_BooksList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="12dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

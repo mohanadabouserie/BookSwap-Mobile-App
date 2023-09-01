@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bkgColor">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".RequestBook"
+            android:background="@color/darkcornflowerBlue">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Book_Info_Part"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="25dp">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/Book_Cover"
+                        android:paddingTop="20dp"
+                        android:paddingLeft="30dp"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="left">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Book_Title"
+                            android:padding="7dp"
+                            android:layout_gravity="left"
+                            android:text="Book Title"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textSize="17sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Book_Author"
+                            android:padding="10dp"
+                            android:layout_gravity="left"
+                            android:text="Author Name"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/montserrat_regular"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Book_ISBN"
+                            android:padding="10dp"
+                            android:layout_gravity="left"
+                            android:text="ISBN"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/montserrat_regular"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Book_Genres"
+                            android:padding="10dp"
+                            android:layout_gravity="left"
+                            android:text="Genre1"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/montserrat_semi_bold"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Request_Book"
+                    android:text="Request"
+                    android:textSize="14sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginBottom="15dp"
+                    android:padding="15dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/buttons_rounded"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/User_Info_Part"
+                android:orientation="vertical"
+                android:background="@drawable/layout_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Seller_Info_Title"
+                    android:padding="20dp"
+                    android:text="User Information"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/darkcornflowerBlue"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/profile_picture_placeholder"
+                        android:id="@+id/User_Pic"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/user_name"
+                            android:text="UserName:"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:textSize="17dp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="50dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/user_phone"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:text="Phone number: ***********"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="20dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/user_email"
+                            android:textStyle="bold"
+                            android:text="Email: ***********"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="20dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Book_Gallery"
+                    android:text="Book Gallery"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/darkcornflowerBlue"
+                    android:padding="20dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/First_Pic"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginLeft="40dp"/>
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/Second_Pic"
+                        android:layout_margin="15dp"
+                        android:scaleType="centerCrop"/>
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/Third_Pic"
+                        android:layout_margin="15dp"
+                        android:scaleType="centerCrop"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

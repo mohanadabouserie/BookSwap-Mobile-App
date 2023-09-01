@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:backgroundTint="@android:color/transparent" /> <!-- Replace with the desired background color for the unselected state -->
+    <stroke
+        android:color="@color/darkcornflowerBlue"
+        android:width="3dp" /> <!-- Replace with the desired light grey color for the borders -->
+    <corners android:radius="8dp" /> <!-- Optional: Customize the corner radius as needed -->
+</shape>
