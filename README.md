@@ -1,4 +1,4 @@
-# BookSwap Android App
+# BookSwap Mobile App
 
 This project involves the development of a mobile application using Android Studio and Java, seamlessly integrated with Firebase for efficient database management. The application offers an intuitive user interface, enabling effortless exchange of physical books. Users can efficiently create profiles, list books they wish to share, and accrue credits for their contributions. This credit system facilitates reciprocal book requests from other users, fostering a collaborative book-swapping ecosystem. The app provides browsing capabilities for available books, categorized by preferred genres on the home page, and empowers users to conduct precise searches based on titles, authors, or ISBN numbers.
 
